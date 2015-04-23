@@ -1,0 +1,352 @@
+body{
+  margin: 0;
+  font-family: ‘Sacramento’, cursive;
+}
+
+a{
+  text-decoration: none;
+}
+
+.top-wrapper{
+  padding: 250px 0 300px 0;
+  background-image: url(img/WaterCharacter02.png);
+  background-size: cover;
+  color: #191970;
+  /*color: white;*/
+  text-align: center;
+}
+
+.container{
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper h1{
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p{
+  opacity: 0.7;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+header{
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  /*positionプロパティをfixedに、topを0に指定してください*/
+  position: fixed;
+  top: 0;
+  /*z-indexを10に指定してください*/
+  z-index:10;
+}
+
+.logo{
+  width: 60px;
+  margin-top: 10px;
+}
+
+.header-left{
+  float: left;
+}
+
+.header-right{
+  float: right;
+  background-color: rgba(255,255,255,0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover{
+  background-color: rgba(255,255,255,0.5);
+}
+
+.header-right a{
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.work-wrapper{
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2{
+  font-weight: normal;
+}
+
+.work{
+  float: left;
+  width: 33%;
+}
+
+.work-icon{
+  position: relative;
+}
+
+.work-icon p{
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  color: white;
+}
+
+.work-icon img{
+  width: 300px;
+  height: 290px;
+}
+
+.txt-contents{
+  width: 80%;
+  display: inline-block;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+.heading h3{
+  font-weight: normal;
+}
+
+.message-wrapper{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message{
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
+}
+
+.message:active{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.footer{
+  padding: 40px 100px;
+  background-color: #f1f2f2;
+  height: 200px;
+  text-align: center;
+}
+
+.footer h3{
+  font-weight: 100;
+}
+
+.sns-list li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+}
+
+.sns-list a{
+  display: block;
+  color: white;
+}
+
+.sns-facebook{
+  background-color: #3b5998;
+}
+
+.sns-twitter{
+  background-color: rgb(48, 196, 216);
+}
+
+.sns-list a:hover, .sns-list a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+/*#main-img{
+  width: 200px;
+  position: absolute;
+}*/
+
+#float-img{
+  position: absolute;
+  margin-left: 450px;
+  display: block;
+  /*left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;*/
+  width: 300px;
+  z-index: 3;
+}
+
+.gallery{
+  text-align: center;
+  padding-top: 50px;
+  overflow: hidden;
+  background-color: #f1f2f2;
+}
+
+.gallery-heading{
+  font-weight: 200;
+  font-size: 40px;
+  margin: 0;
+  color: #204056;
+}
+
+.gallery-inner{
+  padding: 50px 0;
+}
+
+.grid-row > div{
+  display: inline-block;
+}
+
+.col-4{
+  width: 260px;
+}
+
+.gallery-item{
+  position: relative;
+  height: 350px;
+  padding: 40px;
+  text-align: center;
+  margin: 15px;
+  /*background-color: #39d1b4;*/
+  color: black;
+}
+
+.gallery-title{
+  font-size: 30px;
+}
+
+.gallery-image{
+  margin-bottom: 50px;
+}
+
+.gallery-cover{
+  position: absolute;
+  color: black;
+  /*top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);*/
+  padding: 50px 20px;
+  font-size: x-large;
+}
+
+.gallery-img{
+  width: 290px;
+}
+
+#takanori,
+#doken,
+#sound,
+#takanori_balloon,
+#doken_balloon,
+#sound_balloon{
+  display: none;
+}
+
+/*******************************
+* 左からの吹き出し
+********************************/
+.left_balloon {
+    position: relative;
+    background: #fff;
+    border: 1px solid #777;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20%;
+    clear: both;
+    max-width: 500px;
+    float: left;
+}
+.left_balloon:after,
+.left_balloon:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.left_balloon:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 7px;
+    margin-top: -7px;
+}
+.left_balloon:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-right-color: #000;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+/*******************************
+* 右からの吹き出し
+********************************/
+.right_balloon {
+    position: relative;
+    background: #85e249;
+    border: 1px solid #777;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 20%;
+    clear: both;
+    max-width: 500px;
+    float: right;
+}
+.right_balloon:after,
+.right_balloon:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.right_balloon:after {
+    border-color: rgba(133, 226, 73, 0);
+    border-left-color: #85e249;
+    border-width: 7px;
+    margin-top: -7px;
+}
+.right_balloon:before {
+    border-color: rgba(119, 119, 119, 0);
+    border-left-color: #777;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+/*******************************
+* 割り込みを解除
+********************************/
+.clear_balloon{
+  clear: both;
+}
