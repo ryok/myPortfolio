@@ -18,7 +18,7 @@ a{
 
 .container{
    /*width: 1170px;*/
-   width: 100%;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -188,7 +188,7 @@ header{
 
 #float-img{
   position: absolute;
-  margin-left: 450px;
+  margin-left: 600px;
   display: block;
   /*left: 0;
   right: 0;
