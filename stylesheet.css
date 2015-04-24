@@ -19,7 +19,7 @@ a{
 }
 
 .top-wrapper{
-  padding: 250px 0 300px 0;
+  padding: 250px 0 500px 0;
   background-image: url(img/WaterCharacter02.png);
   background-size: cover;
   color: #191970;
@@ -194,7 +194,7 @@ header{
 
 #float-img{
   position: absolute;
-  margin-left: 600px;
+  margin-left: 40%;
   display: block;
   width: 20%;
   z-index: 3;
@@ -355,6 +355,9 @@ header{
 }
 
 /*スマホのスタイル*/
+header{
+  display: nonde;
+}
 
 /*タブレットのスタイル*/
 @media all and (min-width: 480px) {
