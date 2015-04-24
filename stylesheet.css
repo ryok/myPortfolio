@@ -1,5 +1,16 @@
+@charset "utf-8";
+
+/*
+スマホ: 320px - 480px;
+タブレット: 480 - 768px;
+PC: 768px以上;
+*/
+
+/*共通のスタイル*/
+
 body{
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   font-family: ‘Sacramento’, cursive;
 }
 
@@ -18,7 +29,7 @@ a{
 
 .container{
    /*width: 1170px;*/
-  width: 100%;
+  max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -181,20 +192,11 @@ header{
   text-decoration: none;
 }
 
-/*#main-img{
-  width: 200px;
-  position: absolute;
-}*/
-
 #float-img{
   position: absolute;
   margin-left: 600px;
   display: block;
-  /*left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;*/
-  width: 300px;
+  width: 20%;
   z-index: 3;
 }
 
@@ -220,8 +222,8 @@ header{
   display: inline-block;
 }
 
-.col-4{
-  width: 260px;
+.col-3{
+  width: 20%;
 }
 
 .gallery-item{
@@ -255,7 +257,7 @@ header{
 }
 
 .gallery-img{
-  width: 290px;
+  width: 100%;
 }
 
 #takanori,
@@ -350,4 +352,16 @@ header{
 ********************************/
 .clear_balloon{
   clear: both;
+}
+
+/*スマホのスタイル*/
+
+/*タブレットのスタイル*/
+@media all and (min-width: 480px) {
+
+}
+
+/*PCのスタイル*/
+@media all and (min-width: 768px) {
+
 }
