@@ -361,10 +361,14 @@ header{
 
 /*タブレットのスタイル*/
 @media all and (min-width: 480px) {
-
+  header{
+    display: block;
+  }
 }
 
 /*PCのスタイル*/
 @media all and (min-width: 768px) {
-
+  header{
+    display: block;
+  }
 }
