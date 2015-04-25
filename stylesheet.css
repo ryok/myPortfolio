@@ -20,10 +20,10 @@ a{
 
 .top-wrapper{
   padding: 250px 0 500px 0;
-  background-image: url(img/WaterCharacter02.png);
+  background-image: url(img/spaceimg.png);
   background-size: cover;
-  color: #191970;
-  /*color: white;*/
+  /*color: #191970;*/
+  color: white;
   text-align: center;
 }
 
@@ -133,6 +133,7 @@ header{
 }
 
 .message-wrapper{
+  background-image: url(img/waterback.png);
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
@@ -194,71 +195,13 @@ header{
 
 #float-img{
   position: absolute;
-  margin-left: 40%;
-  display: block;
-  width: 20%;
+  margin-left: 35%;
+  /*display: block;*/
+  display: none;
+  width: 30%;
   z-index: 3;
 }
 
-.gallery{
-  text-align: center;
-  padding-top: 50px;
-  overflow: hidden;
-  background-color: #f1f2f2;
-}
-
-.gallery-heading{
-  font-weight: 200;
-  font-size: 40px;
-  margin: 0;
-  color: #204056;
-}
-
-.gallery-inner{
-  padding: 50px 0;
-}
-
-.grid-row > div{
-  display: inline-block;
-}
-
-.col-3{
-  width: 20%;
-}
-
-.gallery-item{
-  position: relative;
-  height: 350px;
-  padding: 40px;
-  text-align: center;
-  margin: 15px;
-  /*background-color: #39d1b4;*/
-  color: black;
-}
-
-.gallery-title{
-  font-size: 30px;
-}
-
-.gallery-image{
-  margin-bottom: 50px;
-}
-
-.gallery-cover{
-  position: absolute;
-  color: black;
-  /*top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.75);*/
-  padding: 50px 20px;
-  font-size: x-large;
-}
-
-.gallery-img{
-  width: 100%;
-}
 
 #takanori,
 #doken,
