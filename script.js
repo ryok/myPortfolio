@@ -26,7 +26,7 @@ $(window).scroll(function() {
     }
 });
 
-// スクロール処理
+// フロートイメージスクロール処理
 function scrollImg(){
 
     // 初期位置が取れていなければ処理を抜ける
@@ -77,4 +77,18 @@ function slideImg(scrollTop, from, to, slideImg, slideBalloon, floatSrcFile) {
     } else {
         $(slideBalloon).slideUp();
     }
+}
+
+function displayGaller() {
+    //画像アニメーション
+        slideImg(scrollTop, 800, 1200, takanori, takanori_balloon, "img/27.png");
+        slideImg(scrollTop, 1400, 2000, doken, doken_balloon, "img/18.png");
+	    
+        if (2200 < scrollTop ) {
+              $(sound).slideDown();
+	      $(sound_balloon).slideDown();
+	      $(setImgId).attr("src", "img/08.png");
+        } else {
+              $(sound_balloon).slideUp();
+        }
 }
