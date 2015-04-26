@@ -199,7 +199,8 @@ header{
   margin-left: 35%;
   /*display: block;*/
   display: none;
-  width: 30%;
+  /*width: 30%;*/
+  height: 40%;
   z-index: 3;
 }
 
