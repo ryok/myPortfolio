@@ -21,7 +21,9 @@ $(document).ready(function() {
 
 //スクロールしたらこの処理が走る
 $(window).scroll(function() {
-    scrollImg();
+    if (window.matchMedia( '(min-width: 484px)' ).matches) {} )) {
+        scrollImg();
+    }
 });
 
 // スクロール処理

@@ -19,7 +19,7 @@ a{
 }
 
 .top-wrapper{
-  padding: 10%  0 30% 0;
+  padding: 100px  0 500px 0;
   background-image: url(img/spaceimg.png);
   background-size: cover;
   /*color: #191970;*/
@@ -199,8 +199,7 @@ header{
   margin-left: 35%;
   /*display: block;*/
   display: none;
-  /*width: 30%;*/
-  height: 50%;
+  width: 30%;
   z-index: 3;
 }
 
