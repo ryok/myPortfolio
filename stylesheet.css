@@ -64,6 +64,7 @@ header{
 
 .header-left{
   float: left;
+  color: white;
 }
 
 .header-right{

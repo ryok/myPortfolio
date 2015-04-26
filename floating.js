@@ -40,7 +40,7 @@ function scrollImg(){
         // positionを設定
         $(setImgId).css('position', 'fixed');
         // topの位置を設定
-        $(setImgId).animate({top: '20%'},
+        $(setImgId).animate({top: '20px'},
             {duration: 0});
 
     } else {

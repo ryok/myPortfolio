@@ -2,7 +2,7 @@
 
 .gallery{
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
   overflow: hidden;
   /*background-color: #f1f2f2;
   background-color: #6A5ACD;*/
@@ -66,7 +66,7 @@
 
 .gallery02{
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
   overflow: hidden;
   /*background-color: #f1f2f2;
   background-color: #FF6347;*/
@@ -76,10 +76,19 @@
 
 .gallery03{
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
   overflow: hidden;
   /*background-color: #f1f2f2;
-  background-color: #00008B;*/
+  
+  background-image: url(img/recordimg01.jpeg);
+  background-size: cover;*/
+  background-color: #00008B;
+}
+
+.insert-img{
+  padding: 250px 0 500px 0;
+  width: 100%;
+  margin: 0 auto;
   background-image: url(img/recordimg01.jpeg);
   background-size: cover;
 }
