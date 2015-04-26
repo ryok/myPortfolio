@@ -70,7 +70,7 @@
   overflow: hidden;
   /*background-color: #f1f2f2;
   background-color: #FF6347;*/
-  background-image: url(img/spaceimg03.png);
+  background-image: url(../img/spaceimg03.png);
   
 }
 
@@ -80,7 +80,7 @@
   overflow: hidden;
   /*background-color: #f1f2f2;
   
-  background-image: url(img/recordimg01.jpeg);
+  background-image: url(../img/recordimg01.jpeg);
   background-size: cover;*/
   background-color: #00008B;
 }
