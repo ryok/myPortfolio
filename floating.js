@@ -10,12 +10,13 @@ var doken_balloon = '#doken_balloon';
 var sound_balloon = '#sound_balloon';
 
 $(document).ready(function() {
-    // 初期位置取得
-    initOffsetTop = $(setImgId).offset().top;
 
     //フロートイメージ表示
     $(setImgId).fadeIn(1500);
     $(setImgId).css('display', 'block');
+
+    // 初期位置取得
+    initOffsetTop = $(setImgId).offset().top;
 });
 
 //スクロールしたらこの処理が走る
