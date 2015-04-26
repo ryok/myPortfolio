@@ -21,20 +21,22 @@ $(document).ready(function() {
 
 //スクロールしたらこの処理が走る
 $(window).scroll(function() {
-    if (window.matchMedia( '(min-width: 484px)' ).matches) {
-        scrollImg();
-    }
-});
-
-// フロートイメージスクロール処理
-function scrollImg(){
-
-    // 初期位置が取れていなければ処理を抜ける
-    if(initOffsetTop == null) return;
 
     // 現在のスクロール位置を取得
     var scrollTop = $(document).scrollTop();
     console.log('scrollTop' + scrollTop);
+
+    // 初期位置が取れていなければ処理を抜ける
+    if(initOffsetTop == null) return;
+
+    if (window.matchMedia( '(min-width: 484px)' ).matches) {
+        scrollImg(scrollTop);
+    }
+    displayGallery(scrollTop);
+});
+
+// フロートイメージスクロール処理
+function scrollImg(scrollTop){
 
     // スクロールさせる要素の初期位置と現在のスクロールの位置を比較
     //初期位置より下にスクロールした時
@@ -54,18 +56,6 @@ function scrollImg(){
             {duration: 0});
         $(setImgId).attr("src", "img/01.png");
     }
-
-    //画像アニメーション
-    slideImg(scrollTop, 800, 1200, takanori, takanori_balloon, "img/27.png");
-    slideImg(scrollTop, 1400, 2000, doken, doken_balloon, "img/18.png");
-
-    if (2200 < scrollTop ) {
-        $(sound).slideDown();
-        $(sound_balloon).slideDown();
-        $(setImgId).attr("src", "img/08.png");
-    } else {
-        $(sound_balloon).slideUp();
-    }
 }
 
 //画像、吹き出しアニメーション用関数
@@ -79,16 +69,16 @@ function slideImg(scrollTop, from, to, slideImg, slideBalloon, floatSrcFile) {
     }
 }
 
-function displayGaller() {
+function displayGallery(scrollTop) {
     //画像アニメーション
-        slideImg(scrollTop, 800, 1200, takanori, takanori_balloon, "img/27.png");
-        slideImg(scrollTop, 1400, 2000, doken, doken_balloon, "img/18.png");
+    slideImg(scrollTop, 800, 1200, takanori, takanori_balloon, "img/27.png");
+    slideImg(scrollTop, 1400, 2000, doken, doken_balloon, "img/18.png");
 	    
-        if (2200 < scrollTop ) {
-              $(sound).slideDown();
-	      $(sound_balloon).slideDown();
-	      $(setImgId).attr("src", "img/08.png");
-        } else {
-              $(sound_balloon).slideUp();
-        }
+    if (2200 < scrollTop ) {
+         $(sound).slideDown();
+         $(sound_balloon).slideDown();
+         $(setImgId).attr("src", "img/08.png");
+     } else {
+         $(sound_balloon).slideUp();
+     } 
 }
