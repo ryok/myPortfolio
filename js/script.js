@@ -93,6 +93,6 @@ function displayGallery(scrollTop) {
      } 
 }
 
-function sound() {
+function goodSound() {
     document.getElementById("sound-file").play();
 }
