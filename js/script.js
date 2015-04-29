@@ -17,6 +17,10 @@ $(document).ready(function() {
 
     // 初期位置取得
     initOffsetTop = $(setImgId).offset().top;
+    
+    var audio = new Audio('../asset/rika-11-checkitout.wav');
+    audio.play();
+
 });
 
 //スクロールしたらこの処理が走る
@@ -29,6 +33,7 @@ $(window).scroll(function() {
     // 初期位置が取れていなければ処理を抜ける
     if(initOffsetTop == null) return;
 
+    // タブレット以上のサイズだったらスクロールを実施
     if (window.matchMedia( '(min-width: 484px)' ).matches) {
         scrollImg(scrollTop);
     }
@@ -40,7 +45,7 @@ function scrollImg(scrollTop){
 
     // スクロールさせる要素の初期位置と現在のスクロールの位置を比較
     //初期位置より下にスクロールした時
-    if (initOffsetTop < scrollTop) {
+    if (initOffsetTop - 100 < scrollTop) {
         // positionを設定
         $(setImgId).css('position', 'fixed');
         // topの位置を設定
@@ -71,7 +76,7 @@ function slideImg(scrollTop, from, to, slideImg, slideBalloon, floatSrcFile) {
 
 function displayGallery(scrollTop) {
     //画像アニメーション
-    slideImg(scrollTop, 800, 1200, takanori, takanori_balloon, "img/27.png");
+    slideImg(scrollTop, 800, 1200, takanori, takanori_balloon, "img/15.png");
     slideImg(scrollTop, 1400, 2000, doken, doken_balloon, "img/18.png");
 	    
     if (2200 < scrollTop ) {
