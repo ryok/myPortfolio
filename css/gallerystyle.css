@@ -1,13 +1,26 @@
 @charset "utf-8";
 
+/*****************************
+* 共通設定
+*****************************/
+#takanori,
+#doken,
+#sound,
+#takanori_balloon,
+#doken_balloon,
+#sound_balloon{
+  display: none;
+}
+
+/*****************************
+ * gallery01 タカノリ
+*****************************/
 .gallery{
   text-align: center;
   padding-top: 20px;
   overflow: hidden;
-  /*background-color: #f1f2f2;
-  background-color: #6A5ACD;
-  background-color: #483D8B;*/
-  background-image: url(../img/bird01.jpg);
+  color: white;
+  background-image: url(../img/spaceimg.png);
 }
 
 .gallery-heading{
@@ -37,7 +50,6 @@
   text-align: center;
   margin: 15px;
   /*background-color: #39d1b4;*/
-  color: white;
 }
 
 .gallery-title{
@@ -51,7 +63,6 @@
 
 .gallery-cover{
   position: absolute;
-  color: white;
   /*color: black;
   top: 0;
   right: 0;
@@ -66,20 +77,29 @@
   width: 100%;
 }
 
+/*****************************
+ * gallery02 土建
+*****************************/
+
 .gallery02{
   text-align: center;
   padding-top: 20px;
   overflow: hidden;
-  /*background-color: #f1f2f2;
-  background-color: #FF6347;*/
+  cursor: pointer;
+  background-color: #f1f2f2;
+  color: red;
   background-image: url(../img/doken.jpg);
 }
 
+/*****************************
+ * gallery03 サウンド
+*****************************/
 .gallery03{
   text-align: center;
   padding-top: 20px;
   overflow: hidden;
-  /*background-color: #f1f2f2;*/
+  cursor: pointer;
+  color: #7CFC00;
   
   background-image: url(../img/recordimg01.jpeg);
   background-size: cover;

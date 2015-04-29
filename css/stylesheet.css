@@ -204,17 +204,7 @@ header{
   z-index: 3;
 }
 
-
-#takanori,
-#doken,
-#sound,
-#takanori_balloon,
-#doken_balloon,
-#sound_balloon{
-  display: none;
-}
-
-.insert-img{
+/*.insert-img{
   padding: 250px 0 500px 0;
   width: 100%;
   margin: 0 auto;
@@ -228,11 +218,37 @@ header{
   margin: 0 auto;
   background-image: url(../img/spaceimg03.png);
   background-size: cover;
+}*/
+
+#submit-btn{
+  display: inline-block;
+  padding: 15px 60px;
+  background-color: rgba(26, 188, 156, 1);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
-/*.insert-comment1{
-  background-color: rgb(48, 196, 216);
-}*/
+.message-img{
+  padding-top: 100px;
+  width: 10%;
+}
+
+.insert-comment{
+  padding: 15px 15px;
+  background-color: #7CFC00;
+  color: white;
+}
+
+.left-comment h2,{
+  float: left;
+}
+
+.right-comment h2,{
+  float: right;
+}
 /*******************************
  * レスポンシブwebデザイン
 *******************************/

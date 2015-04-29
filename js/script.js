@@ -8,6 +8,8 @@ var sound = '#sound';
 var takanori_balloon = '#takanori_balloon';
 var doken_balloon = '#doken_balloon';
 var sound_balloon = '#sound_balloon';
+var audio = new Audio('../asset/rika-11-checkitout.wav');
+
 
 $(document).ready(function() {
 
@@ -17,10 +19,6 @@ $(document).ready(function() {
 
     // 初期位置取得
     initOffsetTop = $(setImgId).offset().top;
-    
-    var audio = new Audio('../asset/rika-11-checkitout.wav');
-    audio.play();
-
 });
 
 //スクロールしたらこの処理が走る
@@ -45,12 +43,18 @@ function scrollImg(scrollTop){
 
     // スクロールさせる要素の初期位置と現在のスクロールの位置を比較
     //初期位置より下にスクロールした時
-    if (initOffsetTop - 100 < scrollTop) {
+    if (initOffsetTop - 100 < scrollTop && scrollTop < 2500) {
         // positionを設定
         $(setImgId).css('position', 'fixed');
         // topの位置を設定
         var _height = $(window).height() * 0.2;
-	$(setImgId).animate({top: _height},
+	    $(setImgId).animate({top: _height},
+            {duration: 0});
+
+    } else if (scrollTop > 2500){
+        $(setImgId).css('position', 'absolute');
+        $(setImgId).animate(
+            {top: 2700},
             {duration: 0});
 
     } else {
@@ -69,6 +73,7 @@ function slideImg(scrollTop, from, to, slideImg, slideBalloon, floatSrcFile) {
         $(slideImg).fadeIn();
         $(slideBalloon).fadeIn(1500);
         $(setImgId).attr("src", floatSrcFile);
+        audio.play();
     } else {
         $(slideBalloon).slideUp();
     }
@@ -86,4 +91,8 @@ function displayGallery(scrollTop) {
      } else {
          $(sound_balloon).slideUp();
      } 
+}
+
+function sound() {
+    document.getElementById("sound-file").play();
 }
