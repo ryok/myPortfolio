@@ -73,7 +73,7 @@ function slideImg(scrollTop, from, to, slideImg, slideBalloon, floatSrcFile) {
         $(slideImg).fadeIn();
         $(slideBalloon).fadeIn(1500);
         $(setImgId).attr("src", floatSrcFile);
-        audio.play();
+        //audio.play();
     } else {
         $(slideBalloon).slideUp();
     }
