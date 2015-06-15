@@ -1,2 +1,2 @@
 # ポートフォリオサイト
-- simple my portfolio site
+* simple my portfolio site
